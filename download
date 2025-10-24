@@ -2,6 +2,6 @@
 set -e
 
 tail -n +2 meta.csv | while IFS=, read -r number url term; do
-  curl -o "$number ($term Term).pdf" "$url"
+  curl -o "United States Reports Volume $number ($term Term).pdf" "$url"
   sleep 2s
 done
